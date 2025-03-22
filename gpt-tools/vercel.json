@@ -1,0 +1,11 @@
+
+{
+  "builds": [
+    { "src": "sami/app.py", "use": "@vercel/python" },
+    { "src": "innovation-scout/app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/sami", "dest": "sami/app.py" },
+    { "src": "/innovation-scout", "dest": "innovation-scout/app.py" }
+  ]
+}
